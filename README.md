@@ -8,6 +8,7 @@
     7. What if number is 0 in a list?
     8. What if target is 0? 
     9. What if list has only one number and that number is equal to target? 
+<<<<<<< HEAD
 
 
 
@@ -23,3 +24,5 @@
          1. increment our counter by 1
       3. Seen number insert to hashtable as a key and value is True
 7. return counter
+=======
+>>>>>>> 3190f41d41434b82d3ea800951360e7a236457d1
