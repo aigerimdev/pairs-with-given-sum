@@ -11,12 +11,15 @@
 
 
 
-Your Question	Your Answer	Does it make sense?	Notes
-1. Non-integer input?	Raise an error.	✅ Yes!	It's safer to expect clean input, or raise error if not.
-2. Negative numbers?	Allow.	✅ Yes!	Negative numbers should be allowed unless the problem says not to.
-3. Empty list?	Return 0.	✅ Yes!	No numbers → no pairs → return 0.
-4. Only one number?	Return 0.	✅ Yes!	One number can't form a pair.
-5. Negative target?	Allow.	✅ Yes!	Target can be any number (positive, negative, zero).
-6. No matching pairs?	Return 0.	✅ Yes!	Correct — no pairs, return 0.
-7. Number 0 in list?	Allow.	✅ Yes!	Zero is just another number, should be treated normally.
-8. Target is 0?	Allow.	✅ Yes!	Should find pairs that add up to 0 (like 0+0 or -1+1).
+1. If the numbers is empty:
+   if yes then return 0
+2. Check if all numbers a integers and chek target as well. If not then raise an value error
+3. if lenght of number == 1 then return 0 because we dont have peer.
+4. create hash table to store seen numbers
+5. create a counter to count peers
+6. itiRATE trough each number:
+      1. find a complement
+      2. if colplements is found in our hash_table:
+         1. increment our counter by 1
+      3. Seen number insert to hashtable as a key and value is True
+7. return counter
