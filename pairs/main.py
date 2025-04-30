@@ -21,7 +21,8 @@ def pairs_with_given_sum (numbers, target):
         
     return counter
 
-print(pairs_with_given_sum ([3, 3, 3], 6))
+print(pairs_with_given_sum ([1, 4, 4, 1], 5)) #[1, 4], [4, 1], [1, 4]
+# print(pairs_with_given_sum ([3, 3, 3], 6))
 # print(pairs_with_given_sum ([6, 'a', 'b'], 6))
 # print(pairs_with_given_sum([-2, 1, 2, -1], 0))
 # print(pairs_with_given_sum ([1, 2, 4, 5], 6))

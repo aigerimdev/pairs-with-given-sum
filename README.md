@@ -1,5 +1,5 @@
     Ask clarifiying question?
-    1. What if the input is not intiger? It is gonna raise an error?
+    1. What if the input is not integer? It is gonna raise an error?
     2. what if nubers are negative? 
     3. what if the list is empty? It is going to return 0
     4. What if the list has only one number? One number can not make a pair return 0
@@ -26,3 +26,10 @@
 7. return counter
 =======
 >>>>>>> 3190f41d41434b82d3ea800951360e7a236457d1
+Initialize count to 0 and an empty dictionary freq to store seen numbers.
+Iterate through each num in the list:
+Compute its complement as target - num.
+If complement exists in freq
+add freq[complement] to count.
+Update freq[num] by incrementing its count.
+After processing all numbers, return count.
